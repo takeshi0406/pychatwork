@@ -4,6 +4,7 @@ import requests
 class Api:
     def __init__(self):
         self._base_url = 'https://api.chatwork.com/v1/'
+        self._token = None
 
     def set_token(self, token):
         self._token = token
