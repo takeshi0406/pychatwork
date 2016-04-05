@@ -23,7 +23,6 @@ class chatworkClient:
             self._make_url('rooms/{}/messages'.format(room_id) + forceflg),
             headers=self._make_headers(self._token)
             )
-        return res
         return self._check_res(res)
 
     def _make_url(self, endpoint):
