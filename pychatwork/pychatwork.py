@@ -2,6 +2,7 @@ import requests
 
 
 class chatworkClient:
+
     def __init__(self, token):
         self._base_url = 'https://api.chatwork.com/v1/'
         self._token = token
@@ -39,7 +40,7 @@ class chatworkClient:
 
     def _check_res(self, res):
         if res.ok:
-            self._check_status_code(res)
+            return self._check_status_code(res)
         else:
             message = res.json()
             raise Exception(message['errors'])

@@ -4,6 +4,11 @@ chatwork api library for Python 3
 
 チャットワークのAPIを簡単に使えるPython3のライブラリです。
 
+## Instollation
+```
+pip install git+https://github.com/takeshi0406/pychatwork
+```
+
 ## Description
 
 ``` python
