@@ -2,11 +2,14 @@ from setuptools import setup, find_packages
 
 setup(
     name='pychatwork',
-    version='1.0.0',
+    description="A Python wrapper for ChatWork's API",
+    version='1.0.2',
+    license='MIT',
     packages=find_packages(),
     author='takeshi0406',
-    include_package_data=True,
-    install_requires=[
-        'requests'
-    ]
+    author_email='sci.and.eng@gmail.com',
+    url='https://github.com/takeshi0406/pychatwork',
+    keywords='chatwork api wrapper',
+    install_requires=['requests'],
+    test_suite='tests',
 )

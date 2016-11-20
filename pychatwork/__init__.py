@@ -1,1 +1,1 @@
-from .pychatwork import chatworkClient
+from .pychatwork import ChatworkClient

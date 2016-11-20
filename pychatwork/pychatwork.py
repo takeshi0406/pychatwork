@@ -1,16 +1,25 @@
 import requests
 
 
-class chatworkClient:
+class ChatworkClient:
+    BASE_URL = 'https://api.chatwork.com/v1/'
 
-    def __init__(self, token):
-        self._base_url = 'https://api.chatwork.com/v1/'
+    def __init__(self, token: str):
+        """
+        Set ChatWork's API token.
+        """
         self._token = token
 
-    def set_token(self, token):
+    def set_token(self, token: str):
+        """
+        Set another ChatWork's API token.
+        """
         self._token = token
 
-    def post_messages(self, message, room_id):
+    def post_messages(self, message: str, room_id: int) -> dict:
+        """
+        Posts a message to a room.
+        """
         res = requests.post(
             self._make_url('rooms/{}/messages'.format(room_id)),
             headers=self._make_headers(self._token),
@@ -18,7 +27,11 @@ class chatworkClient:
             )
         return self._check_res(res)
 
-    def get_messages(self, room_id, force=False):
+    def get_messages(self, room_id: int, force: bool=False) -> list:
+        """
+        Gets new messages from a room.
+        If you set force=True, you can get older messages.
+        """
         forceflg = '?force=1' if force else '?force=0'
         res = requests.get(
             self._make_url('rooms/{}/messages'.format(room_id) + forceflg),
@@ -27,7 +40,7 @@ class chatworkClient:
         return self._check_res(res)
 
     def _make_url(self, endpoint):
-        return self._base_url + endpoint
+        return self.BASE_URL + endpoint
 
     def _make_headers(self, token):
         if token is None:
