@@ -5,6 +5,11 @@ setup(
     description="A Python wrapper for ChatWork's API",
     version='1.0.3',
     license='MIT',
+    classifiers=[
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'License :: OSI Approved :: MIT License',
+    ],
     packages=find_packages(),
     author='takeshi0406',
     author_email='sci.and.eng@gmail.com',
