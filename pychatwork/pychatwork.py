@@ -2,7 +2,7 @@ import requests
 
 
 class ChatworkClient:
-    BASE_URL = 'https://api.chatwork.com/v1/'
+    BASE_URL = 'https://api.chatwork.com/v2/'
 
     def __init__(self, token: str):
         """

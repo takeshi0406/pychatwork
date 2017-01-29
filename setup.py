@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='pychatwork',
     description="A Python wrapper for ChatWork's API",
-    version='1.0.3',
+    version='1.0.4',
     license='MIT',
     classifiers=[
         'Programming Language :: Python :: 3.4',
