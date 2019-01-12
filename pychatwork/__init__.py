@@ -65,7 +65,7 @@ class ChatworkClient:
 
     def _make_headers(self, token):
         if token is None:
-            raise Exception('please set token')
+            raise ValueError('please set token')
         else:
             return {'X-ChatWorkToken': token}
 
