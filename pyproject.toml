@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pychatwork"
-version = "0.1.0"
-description = ""
+version = "0.1.1"
+description = "A Python wrapper for ChatWork's API"
 readme = "README.md"
 authors = ["takeshi <sci.and.eng@gmail.com>"]
 

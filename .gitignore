@@ -6,3 +6,4 @@ dist/
 __pycache__/
 *.pyc
 *.pyo
+pychatwork.egg-info/
