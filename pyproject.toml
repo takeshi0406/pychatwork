@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pychatwork"
+version = "0.1.1"
+description = "A Python wrapper for ChatWork's API"
+readme = "README.md"
+authors = ["takeshi <sci.and.eng@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+requests = "^2.21"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

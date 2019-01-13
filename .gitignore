@@ -1,0 +1,9 @@
+.vscode
+.pytest_cache
+.tmp
+build/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+pychatwork.egg-info/
