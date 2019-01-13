@@ -64,10 +64,7 @@ class ChatworkClient:
         return self.BASE_URL + endpoint
 
     def _make_headers(self, token):
-        if token is None:
-            raise ValueError('please set token')
-        else:
-            return {'X-ChatWorkToken': token}
+        return {'X-ChatWorkToken': token}
 
     def _make_body(self, message: str) -> dict:
         return {'body': message}
